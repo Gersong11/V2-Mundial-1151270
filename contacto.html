@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulario de Contacto</title>
+    <link href="css/estilo.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="utf-8" />
+    <meta charset="ISO-8859-1" />
+</head>
+<script>
+document.getElementById('boton').disabled=true;
+</script>
+
+<body>
+    <div class="container">
+        <form class="contact_form" action="#" id="contact_form" runat="server">
+            <div>
+                <ul>
+                    <li>
+                        <h2>Contactos</h2>
+                    </li>
+                    <li>
+                        <label for="name">Nombre:</label>
+                        <input type="text" placeholder="Digite su Nombre" required />
+                    </li>
+                    <li>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder="Digite su correo" required />
+                        <span class="form_hint">Formato correcto: "nombre@algo.com"</span>
+                    </li>
+                    <li>
+                        <label for="website">Sitio web:</label>
+                        <input type="url" name="website" placeholder="example http://algo.com " required
+                            pattern="(http|https)://.+" />
+                        <span class="form_hint">Formato correcto: "http://algo.com"</span>
+                    </li>
+                    <li>
+                        <label for="message">Mensaje:</label>
+                        <textarea name="message" cols="40" rows="6" required></textarea>
+                    </li>
+                    <li>
+                        <button class="submit" type="submit" id="boton">Enviar mensaje</button>
+                    </li>
+                </ul>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
